@@ -17,8 +17,8 @@ body {
   width: 90%;
 }
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
 }
