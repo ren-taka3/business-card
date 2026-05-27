@@ -23,6 +23,9 @@ body {
   object-fit: cover;
   object-position: center top;
 }
+.title {
+  white-space: nowrap;
+}
 .info-section {
   margin: 20px 0;
   text-align: left;
