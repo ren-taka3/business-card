@@ -20,8 +20,8 @@ body {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  object-fit: contain;
-  background: #f0f0f0;
+  object-fit: cover;
+  object-position: center top;
 }
 .info-section {
   margin: 20px 0;
