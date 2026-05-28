@@ -9,10 +9,12 @@
       font-family: sans-serif;
       background: #f5f5f5;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       min-height: 100vh;
       margin: 0;
+      padding: 40px 0;
+      box-sizing: border-box;
     }
     .card {
       background: white;
@@ -22,6 +24,62 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       max-width: 520px;
       width: 90%;
+    }
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0 0 20px;
+      color: #222;
+    }
+    section {
+      margin-top: 32px;
+      width: 90%;
+      max-width: 520px;
+    }
+    .container {
+      background: white;
+      border-radius: 16px;
+      padding: 32px 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .projects-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .project-content h3 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+      color: #222;
+    }
+    .project-content p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.7;
+    }
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .tag {
+      background: #f0f0f0;
+      color: #444;
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: 20px;
     }
     .avatar {
       width: 180px;
@@ -109,11 +167,6 @@
     </div>
 
     <div class="info-section">
-      <p class="info-label">趣味</p>
-      <p class="info-value">アニメ鑑賞・漫画を読む・ソフトテニス</p>
-    </div>
-
-    <div class="info-section">
       <p class="info-label">活動実績</p>
       <ul class="awards">
         <li><span class="award-name">第7回高専ディープラーニングコンテスト2026（DCON）</span><span class="award-rank rank-gold">第2位</span></li>
@@ -130,5 +183,58 @@
       <a href="mailto:ic221222@edu.okinawa-ct.ac.jp">Email</a>
     </div>
   </div>
+
+  <section>
+    <div class="container">
+
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="adphone.jpg" alt="AdPhone">
+
+          <div class="project-content">
+
+            <h3>AdPhone</h3>
+
+            <p>
+              災害時の通信断絶を解決するために開発した、
+              LPWAベースの災害支援デバイス。
+              通信圏外でもチャット・防災マップ・情報共有が可能。
+            </p>
+
+            <br>
+
+            <p>
+              画像をAIで解析し、
+              「建物倒壊」「負傷者数」などの意味情報へ変換。
+              5MBの画像を5KBへ圧縮し、
+              超低速通信でも情報共有を実現。
+            </p>
+
+            <br>
+
+            <p>
+              小中学校や自治体への導入を目指し、
+              沖縄県庁・総務省沖縄通信事務局と連携。
+            </p>
+
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">LLM</span>
+              <span class="tag">Edge AI</span>
+              <span class="tag">LoRa</span>
+              <span class="tag">BLE</span>
+              <span class="tag">React Native</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
